@@ -36,7 +36,7 @@ public class ConesManager : MonoBehaviour
 
         transform.SetParent(null);
 
-        Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, transform.position.z - 3);
+        Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, transform.position.z - 5);
 
         transform.DOJump(targetPos, _jumpPower,1, _jumpDuration).OnComplete(() => Destroy(gameObject));
     }
