@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Buff.SlowSpeedBuff;
 using Buff.SpeedBuff;
+using Buff.ShieldBuff;
 using DG.Tweening;
 using UnityEngine;
 
@@ -9,7 +10,6 @@ public class BuffSystem : MonoBehaviour
 {
     public CarTrigger carTrigger;
     public ChunkSpeed chunkSpeed;
-    public CoinFlySpawner coinFlySpawner;
     
     private List<IBuff> _buffs =  new List<IBuff>();
     
@@ -34,11 +34,6 @@ public class BuffSystem : MonoBehaviour
         _buffs.Remove(buff);
     }
 
-    public void AddFlyBuff()
-    {
-        AddBuff(new FlyBuff(chunkSpeed, carTrigger.transform, coinFlySpawner, Camera.main.transform));
-    }
-
     public void AddSpeedBuff()
     {
         AddBuff(new SpeedBuff(chunkSpeed));
@@ -47,5 +42,10 @@ public class BuffSystem : MonoBehaviour
     public void AddSlowSpeedBuff()
     {
         AddBuff(new SlowSpeedBuff(chunkSpeed));
+    }
+
+    public void AddShieldBuff()
+    {
+        AddBuff(new ShieldBuff(carTrigger));
     }
 }

@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4463373517679094425}
   - component: {fileID: 1860689491471885353}
+  - component: {fileID: 7330841831964356325}
   m_Layer: 0
   m_Name: Blue Light
   m_TagString: Untagged
@@ -178,6 +179,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &7330841831964356325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4295274194826119264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &5011144230331511338
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092463346111220087}
   - component: {fileID: 3360516765322803949}
+  - component: {fileID: 2363898739247809481}
   m_Layer: 0
   m_Name: Red Light
   m_TagString: Untagged
@@ -272,6 +297,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2363898739247809481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5011144230331511338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &7437263717829056142
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +388,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5927249377784565932, guid: 1b2d9f451fd7f4ace8b9e173654b2235, type: 3}
+  - {fileID: 2100000, guid: fe904be019678394e94eb01e8692221b, type: 2}
   - {fileID: 2100000, guid: 6825eeffbc34a4bd08eefcdef0532065, type: 2}
   - {fileID: 2100000, guid: e55daed8b9ade7d4196b0cddf3002dd9, type: 2}
   - {fileID: 2100000, guid: c04ad49c977df4c828da8b416eb4579e, type: 2}
@@ -394,6 +442,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dc2c0950577d84bbac205bced000f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _jumpPower: 1.4
+  _jumpDuration: 0.55
+  _scatterBack: 4.5
+  _scatterSide: 2.5
 --- !u!65 &-4676688828716652548
 BoxCollider:
   m_ObjectHideFlags: 0

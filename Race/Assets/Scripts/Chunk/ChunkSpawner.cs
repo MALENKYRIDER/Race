@@ -8,6 +8,7 @@ public class ChunkSpawner : MonoBehaviour
     private List<GameObject> _chunks = new List<GameObject>();
 
     public Transform CameraTransform;
+    public GameObject StartChunk;
     public List<GameObject> Chunks = new List<GameObject>();
     public List<Transform> _activeChunks = new List<Transform>();
     
@@ -34,7 +35,9 @@ public class ChunkSpawner : MonoBehaviour
         float nextSpawnPositionZ = CameraTransform.position.z;
         for (int i = 0; i < InitialBlockCount; i++)
         {
-            Transform spawnedChunk = _instantiateChunk.ChunksInstantiate(nextSpawnPositionZ);
+            Transform spawnedChunk = i == 0 && StartChunk != null
+                ? _instantiateChunk.ChunksInstantiate(nextSpawnPositionZ, StartChunk, false)
+                : _instantiateChunk.ChunksInstantiate(nextSpawnPositionZ);
             _activeChunks.Add(spawnedChunk);
             nextSpawnPositionZ += BlockLength;
         }

@@ -118,5 +118,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8c5d9cd1dff6f4c90885b1c708a045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConesManager
-  _jumpPower: 1
+  _jumpPower: 2
   _jumpDuration: 0.7
