@@ -152,7 +152,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 720eccddcad464be881bcae3df8cf845, type: 2}
   - {fileID: 2100000, guid: 8024603c5e2b44639ab0ed488ded2dc4, type: 2}
   - {fileID: 2100000, guid: d8bf69cf834384b54bfe11c6832726b3, type: 2}
-  - {fileID: 1034035819918276004, guid: c98cef565fdb14e8f9887bb1ecaa4504, type: 3}
+  - {fileID: 2100000, guid: 2855f37fbef3eb9479436488ba36776b, type: 2}
   - {fileID: 2100000, guid: e55daed8b9ade7d4196b0cddf3002dd9, type: 2}
   - {fileID: 2100000, guid: b6356b5dfc6ec4cb991337e1bf6c4885, type: 2}
   m_StaticBatchInfo:
@@ -188,6 +188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8dc2c0950577d84bbac205bced000f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _jumpPower: 1.4
+  _jumpDuration: 0.55
+  _scatterBack: 4.5
+  _scatterSide: 2.5
 --- !u!65 &3470333367105487075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -203,7 +207,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

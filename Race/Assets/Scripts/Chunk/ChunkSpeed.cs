@@ -2,6 +2,8 @@
 
 public class ChunkSpeed : MonoBehaviour, ISpeedForBuff, IMultiplierSpeedForBuff
 {
+    [SerializeField] private ScoreManager _scoreManager;
+    
     public float StartMoveSpeed = 10f;
     public float MaxSpeed = 30f;
     public float SpeedIncreasePerSecond = 0.4f;
@@ -43,7 +45,7 @@ public class ChunkSpeed : MonoBehaviour, ISpeedForBuff, IMultiplierSpeedForBuff
         _currentSpeed *= 0.5f;
         if (_currentSpeed < StartMoveSpeed)
         {
-            Debug.Log("Lose");
+            _scoreManager.ShowLosePanel();
         }
     }
 

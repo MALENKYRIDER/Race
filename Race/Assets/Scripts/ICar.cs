@@ -1,6 +1,3 @@
-﻿using System;
-using System.Runtime.InteropServices;
-
 public interface ISpeedForBuff
 {
     void AddSpeed(float speed);
@@ -13,7 +10,9 @@ public interface IMultiplierSpeedForBuff
     void RemoveSpeedMultiplier(float speedMultiplier);
 }
 
-public interface IInvisibleForBuff
+public interface IShieldForBuff
 {
-    void SetInvisible(bool invisible);
+    void SetShieldActive(bool active);
+    void FlashShield();
+    void ResetShieldVisual();
 }

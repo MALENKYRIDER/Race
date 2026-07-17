@@ -6,7 +6,7 @@
 
         public int Duration => 3;
         
-        private const float _speedBuff = 1.5f;
+        private const float _speedBuff = 1.1f;
 
         public SpeedBuff(IMultiplierSpeedForBuff multiplierSpeedForBuff)
         {
